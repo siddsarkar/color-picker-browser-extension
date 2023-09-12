@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "color-picker-browser-extension",
+  "version": "1.0.0",
+  "description": "Color Picker Browser Extension",
+  "scripts": {
+    "start": "webpack --watch --config-name dev",
+    "build-dev": "webpack --config-name dev",
+    "build-prod": "webpack --config-name prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddsarkar/color-picker-browser-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddsarkar/color-picker-browser-extension/issues"
+  },
+  "homepage": "https://github.com/siddsarkar/color-picker-browser-extension#readme",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
+    "@types/chrome": "^0.0.245",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.29",
+    "postcss-loader": "^7.3.3",
+    "prettier": "^3.0.3",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.4.4",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Options</legend>
+            <div>
+                <label>
+                    Collapsed
+                    <input type="checkbox" id="autoGroupTabs" name="options" />
+                </label>
+                <label>
+                    Show tab count
+                    <input type="checkbox" id="showTabCount" name="options" />
+                </label>
+            </div>
+        </fieldset>
+        <form id="addRuleForm">
+            <fieldset>
+                <legend>Current Group</legend>
+
+                <div>
+                    <input
+                        disabled
+                        style="cursor: not-allowed"
+                        type="text"
+                        name="origin"
+                        id="tab-group-origin"
+                        placeholder="origin" />
+                    <input
+                        required
+                        type="text"
+                        name="title"
+                        id="tab-group-title"
+                        placeholder="title" />
+
+                    <select name="color" id="tab-group-color">
+                        <option value="">[color] random</option>
+                        <option value="grey" style="background: grey">
+                            [color] grey
+                        </option>
+                        <option value="red" style="background: red">
+                            [color] red
+                        </option>
+                        <option value="blue" style="background: blue">
+                            [color] blue
+                        </option>
+                        <option value="green" style="background: green">
+                            [color] green
+                        </option>
+                        <option value="yellow" style="background: yellow">
+                            [color] yellow
+                        </option>
+                        <option value="orange" style="background: orange">
+                            [color] orange
+                        </option>
+                        <option value="purple" style="background: purple">
+                            [color] purple
+                        </option>
+                        <option value="pink" style="background: pink">
+                            [color] pink
+                        </option>
+                        <option value="cyan" style="background: cyan">
+                            [color] cyan
+                        </option>
+                    </select>
+                </div>
+                <button>
+                    Add <br />
+                    (or) <br />
+                    Update
+                </button>
+            </fieldset>
+        </form>
+        <fieldset>
+            <legend>Saved Titles</legend>
+            <div class="rules" id="rulesList"></div>
+        </fieldset>
+    </body>
+</html>
