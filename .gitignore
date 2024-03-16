@@ -1,2 +1,4 @@
 /node_modules
-/addon
+/dist
+/build
+/.parcel-cache

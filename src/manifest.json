@@ -1,0 +1,32 @@
+{
+  "name": "Pick Color",
+  "version": "2.0.0",
+  "description": "Pick any color from screen",
+  "author": "Siddhartha Sarkar",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.ts"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArDxWTqNFEjtAskJoCvZXulbW3iif2MMwYb+UZmqahpohGBhmMMW4fsV6Wb6RslZPgQ7RzFLNj/6kTs/pEnASmvQ+GjpfB0n1qvnfhsdWVWLMr5UQdiR/HsMYZEj+/q+m3ZF+m+yK2yGw/vDBBhdXsM+wDKR9oDNjsLmPTSg2LBR4qF+e3VD5ne3V56p1tyzIS9ReHzF4ic2jdS3KWjKUQOn2Bc/UQzyngGFH56B70U0Wz4CPvZcY/Y+sXd8udi4a2kErjrQVja0iRWQxvqTQP04sePgHpQjG8EKXzXlnj06a7iRQL+RqedYHDqh7DzzjJEmWUemOfwenfdnoJ7oVxQIDAQAB",
+  "permissions": ["contextMenus", "sidePanel", "clipboardWrite", "storage"],
+  "icons": {
+    "48": "assets/icons/icon48.png",
+    "96": "assets/icons/icon96.png",
+    "144": "assets/icons/icon128.png",
+    "240": "assets/icons/icon256.png"
+  },
+  "action": {
+    "default_icon": "assets/icons/icon48.png",
+    "default_title": "Click to open panel"
+  },
+  "side_panel": {
+    "default_path": "features/color-picker/presentation/views/sidepanel/index.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+6"
+      }
+    }
+  }
+}
