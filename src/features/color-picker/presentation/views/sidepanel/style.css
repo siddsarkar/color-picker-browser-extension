@@ -79,7 +79,7 @@
     @apply mr-2 w-[184px] rounded-lg bg-blue-500 px-6 py-3 text-white dark:bg-blue-600 md:mr-3 md:px-9 md:py-4;
   }
   .btn-text {
-    @apply mt-3 dark:text-gray-300 md:ml-auto md:mt-0;
+    @apply mt-3 hover:text-red-500 dark:text-gray-300 dark:hover:text-red-400 md:ml-auto md:mt-0;
   }
 
   .bg-multicolor-gradient {
