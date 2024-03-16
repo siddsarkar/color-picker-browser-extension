@@ -1,0 +1,29 @@
+name: Release
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install
+        run: |
+          npm install
+      - name: Build
+        run: |
+          npm run build
+      - name: Zip
+        run: |
+          zip -r addon.zip addon
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            addon.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
