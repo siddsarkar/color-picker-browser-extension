@@ -18,7 +18,7 @@ jobs:
           npm run build
       - name: Zip
         run: |
-          zip -r addon.zip addon
+          zip -r addon.zip build
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
