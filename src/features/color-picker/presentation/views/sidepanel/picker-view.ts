@@ -108,6 +108,8 @@ export default class PickerView extends EventEmitter<PickerViewEvents> {
         return color.rgb
       case ColorMode.hsl:
         return color.hsl
+      case ColorMode.flutter:
+        return color.flutterColor
     }
   }
 
@@ -116,7 +118,7 @@ export default class PickerView extends EventEmitter<PickerViewEvents> {
     const colorCode = this.getColorString(color, colorMode)
 
     const colorElement = document.createElement('button')
-    colorElement.style.backgroundColor = colorCode
+    colorElement.style.backgroundColor = color.hex
     colorElement.classList.add(
       'flex',
       'flex-col',

@@ -1,5 +1,6 @@
 export enum ColorMode {
   hex = 'hex',
   rgb = 'rgb',
-  hsl = 'hsl'
+  hsl = 'hsl',
+  flutter = 'flutter'
 }
