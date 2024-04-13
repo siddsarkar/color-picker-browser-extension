@@ -1,11 +1,11 @@
-export const colorIsDark = (colorCode: string): boolean => {
-  if (colorCode === '') return false
+export const colorIsDark = (hex: string): boolean => {
+  if (hex === '') return false
 
-  colorCode = colorCode.replace('#', '')
+  hex = hex.replace('#', '')
 
-  const t = parseInt(colorCode.substring(0, 2), 16)
-  const n = parseInt(colorCode.substring(2, 4), 16)
-  const s = parseInt(colorCode.substring(4, 6), 16)
+  const t = parseInt(hex.substring(0, 2), 16)
+  const n = parseInt(hex.substring(2, 4), 16)
+  const s = parseInt(hex.substring(4, 6), 16)
   const o = (t * 299 + n * 587 + s * 114) / 1e3
 
   return !(o >= 128)
