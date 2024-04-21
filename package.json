@@ -4,7 +4,7 @@
   "description": "Browser extension to pick color anywhere from screen.",
   "scripts": {
     "start": "parcel watch src/manifest.json --host localhost",
-    "build": "parcel build src/manifest.json --no-optimize --no-source-maps --no-content-hash --dist-dir build",
+    "build": "parcel build src/manifest.json --no-optimize --no-scope-hoist --no-source-maps --no-content-hash --dist-dir build",
     "lint": "eslint --ext .ts,.tsx src",
     "lint:fix": "eslint --ext .ts,.tsx src --fix",
     "format": "prettier --write .",
